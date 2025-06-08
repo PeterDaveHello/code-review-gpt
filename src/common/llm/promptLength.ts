@@ -3,63 +3,63 @@ import { logger } from '../utils/logger'
 export const modelInfo = [
   {
     model: 'openai:o3',
-    maxPromptLength: 300000, //100k tokens
+    maxPromptLength: 300000, //100k tokens // TODO: Verify context window for this model from official documentation if available.
   },
   {
     model: 'openai:o3-mini',
-    maxPromptLength: 300000, //100k tokens
+    maxPromptLength: 300000, //100k tokens // TODO: Verify context window for this model from official documentation if available.
   },
   {
     model: 'openai:o4-mini',
-    maxPromptLength: 300000, //100k tokens
+    maxPromptLength: 300000, //100k tokens // TODO: Verify context window for this model from official documentation if available.
   },
   {
     model: 'openai:o1',
-    maxPromptLength: 300000, //100k tokens
+    maxPromptLength: 300000, //100k tokens // TODO: Verify context window for this model from official documentation if available.
   },
   {
     model: 'openai:gpt-4o-mini',
-    maxPromptLength: 300000, //128k tokens
+    maxPromptLength: 384000, //128k tokens
   },
   {
     model: 'openai:gpt-4o',
-    maxPromptLength: 300000, //128k tokens
+    maxPromptLength: 384000, //128k tokens
   },
   {
     model: 'openai:gpt-4.1',
-    maxPromptLength: 2400000, //1024k tokens (1M context window)
+    maxPromptLength: 2400000, //1024k tokens (1M context window) // TODO: Verify context window for this model from official documentation if available.
   },
   {
     model: 'openai:gpt-4.1-mini',
-    maxPromptLength: 2400000, //1024k tokens (1M context window)
+    maxPromptLength: 2400000, //1024k tokens (1M context window) // TODO: Verify context window for this model from official documentation if available.
   },
   {
     model: 'openai:gpt-4.1-nano',
-    maxPromptLength: 2400000, //1024k tokens (1M context window)
+    maxPromptLength: 2400000, //1024k tokens (1M context window) // TODO: Verify context window for this model from official documentation if available.
   },
   {
     model: 'openai:gpt-4-turbo',
-    maxPromptLength: 300000, //128k tokens
+    maxPromptLength: 384000, //128k tokens
   },
   {
     model: 'openai:gpt-4-turbo-preview',
-    maxPromptLength: 300000, //128k tokens
+    maxPromptLength: 384000, //128k tokens
   },
   {
     model: 'openai:gpt-4',
-    maxPromptLength: 21000, //8k tokens
+    maxPromptLength: 24576, //8k tokens
   },
   {
     model: 'openai:gpt-4-32k',
-    maxPromptLength: 90000, //32k tokens
+    maxPromptLength: 98304, //32k tokens
   },
   {
     model: 'openai:gpt-3.5-turbo',
-    maxPromptLength: 45000, //16k tokens
+    maxPromptLength: 49155, //16k tokens
   },
   {
     model: 'openai:gpt-3.5-turbo-16k',
-    maxPromptLength: 45000, //16k tokens
+    maxPromptLength: 49155, //16k tokens
   },
 ] // Response needs about 1k tokens ~= 3k characters
 
